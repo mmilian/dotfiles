@@ -1,0 +1,2 @@
+$DOTFILES/scripts/pbcopy=$HOME/.local/bin/pbcopy
+$DOTFILES/scripts/pbpaste=$HOME/.local/bin/pbpaste
