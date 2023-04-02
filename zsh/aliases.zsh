@@ -1,3 +1,6 @@
+#custom
+alias cb='code ~/repo/couple-brige/cb-backend/functions/'
+alias dot='cd ~/repo/dotfiles'
 # ALIASES ---------------------------------------------------------------------
 alias unmount_all_and_exit='unmount_all && exit'
 alias d=docker
@@ -5,9 +8,9 @@ alias dc=docker-compose
 alias dkill="pgrep \"Docker\" | xargs kill -9"
 alias hcat='highlight -O ansi'
 
-alias v='lvim -w ~/.vimlog "$@"'
-alias vi='lvim -w ~/.vimlog "$@"'
-alias vim='lvim -w ~/.vimlog "$@"'
+alias v='nvim -w ~/.vimlog "$@"'
+alias vi='nvim -w ~/.vimlog "$@"'
+alias vim='nvim -w ~/.vimlog "$@"'
 
 alias zn='vim $NOTES_DIR/$(date +"%Y%m%d%H%M.md")'
 

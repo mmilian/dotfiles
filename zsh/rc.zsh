@@ -37,6 +37,8 @@ export PATH="$PATH:/usr/local/sbin:$DOTFILES/bin:$HOME/.local/bin"
 
 eval "$(starship init zsh)"
 
+. "$HOME/.asdf/asdf.sh"
+
 # VIM MODE (http://dougblack.io/words/zsh-vi-mode.html) -----------------------
 # bindkey -v
 # bindkey '^?' backward-delete-char
