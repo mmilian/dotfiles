@@ -1,2 +1,4 @@
 $DOTFILES/nvim/nvim.appimage=$HOME/.local/bin/nvim
 $DOTFILES/nvim/config=$HOME/.config/nvim
+$DOTFILES/nvim/share=$HOME/.local/share/nvim
+$DOTFILES/nvim/state=$HOME/.local/state/nvim

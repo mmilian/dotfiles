@@ -16,6 +16,7 @@ NODEJS_CHECK_SIGNATURES=no asdf install nodejs 16.16.0
 asdf global nodejs $(asdf list nodejs | tail -1 | sed 's/^ *//g')
 asdf plugin-add python
 asdf global python system
+pip3 install ansible-lint
 npm install -g git-branch-utils
 npm install -g neovim
 
