@@ -1,0 +1,2 @@
+$DOTFILES/nvim/nvim.appimage=$HOME/.local/bin/nvim
+$DOTFILES/nvim/config=$HOME/.config/nvim
