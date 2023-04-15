@@ -43,7 +43,7 @@ alias gu='git reset --soft HEAD~1'
 alias gpr='git remote prune origin'
 alias ff='gpr && git pull --ff-only'
 alias grm='git fetch origin && git rebase origin/main'
-alias gbb='git-switchbranch'
+alias gbb='git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="->" | xargs git checkout'
 alias gbf='git branch | head -1 | xargs' # top branch
 alias gl=pretty_git_log
 alias gla=pretty_git_log_all
