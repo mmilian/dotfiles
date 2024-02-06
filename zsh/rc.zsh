@@ -9,7 +9,7 @@ source_if_exists $DOTFILES/zsh/history.zsh
 source_if_exists $DOTFILES/zsh/git.zsh
 source_if_exists ~/.fzf.zsh
 source_if_exists $DOTFILES/zsh/aliases.zsh
-# source_if_exists $HOME/.asdf/asdf.sh
+source_if_exists $HOME/.asdf/asdf.sh
 source_if_exists /usr/local/etc/profile.d/z.sh
 source_if_exists /opt/homebrew/etc/profile.d/z.sh
 
@@ -33,9 +33,15 @@ precmd() {
 
 export VISUAL=nvim
 export EDITOR=nvim
-export PATH="$PATH:/usr/local/sbin:$DOTFILES/bin:$HOME/.local/bin"
+export GRAALVM_HOME="$HOME/tools/graalvm-ce-java11-22.3.2"
+export XDG_CONFIG_HOME="$HOME/.config"
+
+export PATH="$HOME/.local/bin/flutter/bin:$PATH:/usr/local/sbin:$DOTFILES/bin:$HOME/.local/bin:$GRAALVM_HOME/bin"
+
+
 
 eval "$(starship init zsh)"
+
 
 . "$HOME/.asdf/asdf.sh"
 
@@ -55,3 +61,11 @@ eval "$(starship init zsh)"
 # END VIM MODE ----------------------------------------------------------------
 
 #eval "$(lua ~/bin/z.lua --init zsh)"
+
+export PATH="${PATH}:$HOME/.cargo/bin"
+
+source "$HOME/.tas_toolbox_env.sh"
+
+
+export PATH="$PATH:$HOME/.local/bin
+export PATH=$PATH:/usr/local/go/bin"

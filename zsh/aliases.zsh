@@ -1,4 +1,6 @@
 #custom
+alias ap=ansible-playbook
+alias iac='cd ~/repo/creoox/devops/iac/'
 alias cb='code ~/repo/couple-brige/cb-backend/functions/'
 alias dot='cd ~/repo/dotfiles'
 # ALIASES ---------------------------------------------------------------------
@@ -39,7 +41,7 @@ alias gd='git diff -w'
 alias gds='git diff -w --staged'
 alias grs='git restore --staged'
 alias gst='git rev-parse --git-dir > /dev/null 2>&1 && git status || exa'
-alias gu='git reset --soft HEAD~1'
+#alias gu='git reset --soft HEAD~1'
 alias gpr='git remote prune origin'
 alias ff='gpr && git pull --ff-only'
 alias grm='git fetch origin && git rebase origin/main'
